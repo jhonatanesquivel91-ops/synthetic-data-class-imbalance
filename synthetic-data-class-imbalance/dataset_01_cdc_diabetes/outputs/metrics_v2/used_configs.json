@@ -1,0 +1,37 @@
+{
+    "dataset": "cdc_diabetes",
+    "smote_k": 3,
+    "ctgan": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "tvae": {
+        "epochs": 500,
+        "batch_size": 256,
+        "embedding_dim": 128
+    },
+    "hybrid": {
+        "epochs": 500,
+        "batch_size": 1000,
+        "pac": 10
+    },
+    "alpha_smote": 0.5,
+    "train_in": {
+        "0": 139733,
+        "1": 22622
+    },
+    "test": {
+        "0": 43667,
+        "1": 7069
+    },
+    "n_features": 21,
+    "n_num": 5,
+    "n_cat": 16,
+    "proxy_scores": {
+        "smote": 0.38980083234070817,
+        "ctgan": 0.37664404253183215,
+        "tvae": 0.35165887737172175,
+        "hybrid": 0.3640541131937718
+    }
+}

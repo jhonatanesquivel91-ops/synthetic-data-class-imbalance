@@ -1,0 +1,7 @@
+{
+    "best_auc_pr": 0.4716475293001673,
+    "params": {
+        "k_neighbors": 3
+    },
+    "method": "SMOTE-NC"
+}

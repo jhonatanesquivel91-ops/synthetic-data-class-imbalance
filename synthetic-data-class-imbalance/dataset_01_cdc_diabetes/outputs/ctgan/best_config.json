@@ -1,0 +1,9 @@
+{
+    "best_auc_pr": 0.37664404253183215,
+    "best_params": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "training_mode": "minority_only"
+}

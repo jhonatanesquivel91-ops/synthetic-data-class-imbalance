@@ -1,0 +1,21 @@
+# Probado con Python 3.10. Para fijar las versiones exactas del servidor:  pip freeze > requirements-lock.txt
+numpy
+pandas
+scipy
+scikit-learn
+imbalanced-learn
+xgboost
+catboost
+torch
+ctgan
+sdv
+pyyaml
+joblib
+ucimlrepo
+matplotlib
+seaborn
+openpyxl
+jupyter
+# Demo (app/)
+streamlit
+plotly

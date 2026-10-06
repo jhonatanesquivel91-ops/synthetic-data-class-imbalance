@@ -1,0 +1,46 @@
+dataset_name: aids_clinical_trial_175
+source: UCI
+uci_id: 890
+dataset: 3
+ratio: 3.10
+
+target_column: cid
+
+drop_columns:
+  - pidnum
+
+numerical_features:
+  - time
+  - age
+  - wtkg
+  - karnof
+  - preanti
+  - cd40
+  - cd420
+  - cd80
+  - cd820
+
+categorical_features:
+  - trt
+  - hemo
+  - homo
+  - drugs
+  - oprior
+  - z30
+  - zprior
+  - race
+  - gender
+  - str2
+  - strat
+  - symptom
+  - treat
+  - offtrt
+
+imbalance_level: low
+
+apply_methods:
+  smote_nc: true
+  smote: false
+  ctgan: true
+  tvae: true
+  hybrid: true

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+catboost_info/
+logs/
+# Datos intermedios que se regeneran con los notebooks 01 y 03 (pesados)
+dataset_*/outputs/data/
+dataset_*/outputs/splits/*.csv
+dataset_*/outputs/smote/*.csv
+dataset_*/outputs/ctgan/*.csv
+dataset_*/outputs/tvae/*.csv
+dataset_*/outputs/hybrid/*.csv
+dataset_*/outputs/plots/
+*.pkl
+app/data/

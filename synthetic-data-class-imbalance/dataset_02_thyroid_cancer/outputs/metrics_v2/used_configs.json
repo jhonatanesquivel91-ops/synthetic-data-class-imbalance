@@ -1,0 +1,37 @@
+{
+    "dataset": "thyroid_cancer_recurrence",
+    "smote_k": 7,
+    "ctgan": {
+        "epochs": 500,
+        "batch_size": 1000,
+        "pac": 10
+    },
+    "tvae": {
+        "epochs": 500,
+        "batch_size": 512,
+        "embedding_dim": 256
+    },
+    "hybrid": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "alpha_smote": 0.5,
+    "train_in": {
+        "1": 69,
+        "0": 175
+    },
+    "test": {
+        "0": 55,
+        "1": 22
+    },
+    "n_features": 16,
+    "n_num": 1,
+    "n_cat": 15,
+    "proxy_scores": {
+        "smote": 0.9782135076252724,
+        "ctgan": 0.988795518207283,
+        "tvae": 0.9866310160427808,
+        "hybrid": 0.9938080495356038
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "best_auc_pr": 0.4575248264899787,
+    "best_params": {
+        "epochs": 500,
+        "batch_size": 256,
+        "embedding_dim": 128
+    },
+    "training_mode": "minority_only"
+}

@@ -1,0 +1,37 @@
+{
+    "dataset": "taiwanese_bankruptcy_prediction",
+    "smote_k": 3,
+    "ctgan": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "tvae": {
+        "epochs": 500,
+        "batch_size": 512,
+        "embedding_dim": 256
+    },
+    "hybrid": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "alpha_smote": 0.5,
+    "train_in": {
+        "0": 4223,
+        "1": 141
+    },
+    "test": {
+        "0": 1320,
+        "1": 44
+    },
+    "n_features": 95,
+    "n_num": 93,
+    "n_cat": 2,
+    "proxy_scores": {
+        "smote": 0.3025457890368983,
+        "ctgan": 0.35390135578757764,
+        "tvae": 0.3071492091329927,
+        "hybrid": 0.3689220333299492
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "target_per_class": 4223,
+    "samples_to_generate": 4082,
+    "minority_label": 1
+}

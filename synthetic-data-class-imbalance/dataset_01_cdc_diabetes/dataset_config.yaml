@@ -1,0 +1,43 @@
+dataset_name: cdc_diabetes
+source: UCI
+uci_id: 891
+dataset: 1
+ratio: 6.18
+
+target_column: Diabetes_binary
+
+drop_columns: []
+
+numerical_features:
+  - BMI
+  - MentHlth
+  - PhysHlth
+  - Age
+  - Income
+
+categorical_features:
+  - HighBP
+  - HighChol
+  - CholCheck
+  - Smoker
+  - Stroke
+  - HeartDiseaseorAttack
+  - PhysActivity
+  - Fruits
+  - Veggies
+  - HvyAlcoholConsump
+  - AnyHealthcare
+  - NoDocbcCost
+  - DiffWalk
+  - Sex
+  - GenHlth
+  - Education
+
+imbalance_level: high
+
+apply_methods:
+  smote_nc: true
+  smote: false
+  ctgan: true
+  tvae: true
+  hybrid: true

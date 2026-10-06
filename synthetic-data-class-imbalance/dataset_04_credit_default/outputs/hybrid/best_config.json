@@ -1,0 +1,9 @@
+{
+    "best_auc_pr": 0.46371864515400574,
+    "best_params": {
+        "epochs": 500,
+        "batch_size": 1000,
+        "pac": 10
+    },
+    "alpha": 0.5
+}

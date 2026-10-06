@@ -1,0 +1,37 @@
+{
+    "dataset": "credit_card_default",
+    "smote_k": 3,
+    "ctgan": {
+        "epochs": 300,
+        "batch_size": 500,
+        "pac": 10
+    },
+    "tvae": {
+        "epochs": 500,
+        "batch_size": 256,
+        "embedding_dim": 128
+    },
+    "hybrid": {
+        "epochs": 500,
+        "batch_size": 1000,
+        "pac": 10
+    },
+    "alpha_smote": 0.5,
+    "train_in": {
+        "0": 14953,
+        "1": 4247
+    },
+    "test": {
+        "0": 4673,
+        "1": 1327
+    },
+    "n_features": 23,
+    "n_num": 14,
+    "n_cat": 9,
+    "proxy_scores": {
+        "smote": 0.4716475293001673,
+        "ctgan": 0.47011395067043976,
+        "tvae": 0.4575248264899787,
+        "hybrid": 0.46371864515400574
+    }
+}

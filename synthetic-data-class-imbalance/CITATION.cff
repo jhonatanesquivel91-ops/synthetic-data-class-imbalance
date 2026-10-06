@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Si usas este código, cita el artículo."
+title: "Comparative evaluation of synthetic data generation methods for binary classification problems with class imbalance"
+authors:
+  - family-names: Esquivel
+    given-names: Jhonatan
+  - family-names: Humpiri
+    given-names: Christian
+  - family-names: Vega
+    given-names: Jose
+  - family-names: Saboya
+    given-names: Nemias
+license: MIT
+preferred-citation:
+  type: article
+  title: "Comparative Evaluation of Synthetic Data Generation Methods for Binary Classification Problems with Class Imbalance"
+  authors:
+    - family-names: Esquivel
+      given-names: Jhonatan
+    - family-names: Humpiri
+      given-names: Christian
+    - family-names: Vega
+      given-names: Jose
+    - family-names: Saboya
+      given-names: Nemias
+  journal: "International Journal of Advanced Computer Science and Applications"
+  volume: 17
+  issue: 9
+  year: 2026
+  doi: "10.14569/IJACSA.2026.0170971"
