@@ -32,7 +32,7 @@ La síntesis desplaza la frontera de decisión hacia la clase minoritaria: el **
 │   ├── make_figures.py        # Figuras 3 y 5–14
 │   └── fig4_fidelity_ds1.py   # Figura 4 (se ejecuta dentro de dataset_01_cdc_diabetes)
 ├── results/                   # stats_full.csv, summary_full.csv, figuras y tabla suplementaria
-└── app/                       # Demo interactiva (Streamlit)
+└── demo_sustentacion.ipynb    # Demo: protocolo completo, sintetizado, sobre un dataset
 ```
 
 | Carpeta | Dataset | Dominio | Ratio | Fuente |
@@ -82,15 +82,16 @@ categorical_features: [sexo, region]
 
 ## Demo
 
+`demo_sustentacion.ipynb` ejecuta el protocolo de la tesis de principio a fin sobre un dataset (DS2, DS3 o DS5): partición sin fuga, generación, fidelidad, utilidad con XGBoost y CatBoost, pruebas pareadas con Holm, gráficos y comparación con las 10 corridas publicadas.
+
 ```bash
-python app/prepare_offline.py   # una vez, con Internet: guarda los datasets de ejemplo en app/data/
-streamlit run app/app.py
+jupyter notebook demo_sustentacion.ipynb
 ```
 
-- **Resultados de la tesis:** explora las 10 corridas por dataset, clasificador y métrica, con la significancia de cada método.
-- **Evaluar un dataset:** usa un ejemplo guardado de la UCI o sube un CSV y compara REAL, REAL-CW, SMOTE-NC, CTGAN y TVAE con el mismo protocolo en versión rápida, con pruebas pareadas y una lectura automática de los resultados.
+- `MODO = "rapido"`: SMOTE-NC, 5 corridas (1 a 2 minutos en CPU).
+- `MODO = "completo"`: los cuatro métodos, 3 corridas (15 a 25 minutos en CPU).
 
-Para mostrar la validación estadística en segundos: `python analysis/stats_tests.py`.
+La primera ejecución descarga el dataset de la UCI y lo guarda en `data/`; después funciona sin Internet.
 
 ## Datos
 

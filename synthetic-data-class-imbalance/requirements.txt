@@ -16,6 +16,3 @@ matplotlib
 seaborn
 openpyxl
 jupyter
-# Demo (app/)
-streamlit
-plotly

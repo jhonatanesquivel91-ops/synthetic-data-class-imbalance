@@ -12,4 +12,5 @@ dataset_*/outputs/tvae/*.csv
 dataset_*/outputs/hybrid/*.csv
 dataset_*/outputs/plots/
 *.pkl
-app/data/
+# Datasets descargados por demo_sustentacion.ipynb
+/data/
